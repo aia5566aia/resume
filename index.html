@@ -31,7 +31,7 @@
       background: white;
       border-radius: 28px;
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
-      padding: 2rem 2.2rem;
+      padding: 2rem 2rem;
       margin-bottom: 2rem;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
@@ -130,25 +130,25 @@
     }
 
     .section-title {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       font-weight: 700;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
       letter-spacing: -0.3px;
       display: flex;
       align-items: center;
       gap: 0.6rem;
-      border-bottom: 3px solid #dce7ef;
-      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #dce7ef;
+      padding-bottom: 0.4rem;
     }
 
     .section-title i {
       color: #2c6e9e;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
 
     .bio-text p {
       margin-bottom: 1rem;
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: #2c3f4f;
     }
 
@@ -161,7 +161,7 @@
     }
 
     .exp-item {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     .exp-header {
@@ -169,8 +169,8 @@
       flex-wrap: wrap;
       justify-content: space-between;
       font-weight: 700;
-      font-size: 1.15rem;
-      margin-bottom: 0.4rem;
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
     }
 
     .exp-company {
@@ -180,14 +180,14 @@
     .exp-date {
       font-weight: 400;
       color: #5a6e7c;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
 
     .exp-title {
       font-weight: 600;
       color: #2c6e9e;
-      margin-bottom: 0.75rem;
-      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
     }
 
     .exp-desc {
@@ -196,117 +196,129 @@
     }
 
     .exp-desc li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
       display: flex;
       gap: 0.6rem;
-      font-size: 0.94rem;
+      font-size: 0.88rem;
     }
 
     .exp-desc li i {
       color: #2c6e9e;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       margin-top: 0.2rem;
-      width: 1.2rem;
+      width: 1.1rem;
     }
 
     .skills-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 0.5rem;
+      gap: 0.6rem;
+      margin-top: 0.3rem;
     }
 
     .skill-chip {
       background: #eef2f5;
-      padding: 0.4rem 1rem;
+      padding: 0.3rem 0.8rem;
       border-radius: 30px;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 500;
     }
 
     .work-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.2rem;
-      margin-top: 1rem;
+      gap: 1rem;
+      margin-top: 0.8rem;
     }
 
     .work-card {
       background: #f9fbfd;
-      border-radius: 1.2rem;
-      padding: 1rem 1.2rem;
+      border-radius: 1rem;
+      padding: 0.8rem 1rem;
       flex: 1 1 200px;
       border: 1px solid #e2edf2;
       transition: all 0.2s;
     }
 
     .work-card i {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: #2c6e9e;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
     }
 
     .work-card h4 {
       font-weight: 700;
-      margin: 0.5rem 0 0.2rem;
+      font-size: 0.95rem;
+      margin: 0.3rem 0 0.1rem;
     }
 
+    .work-card p {
+      font-size: 0.8rem;
+      color: #5a6e7c;
+    }
+
+    /* 小說卡片（兩欄、摘錄可多行） */
     .story-card {
       background: #f9fbfd;
-      border-radius: 1.2rem;
-      padding: 1rem 1.2rem;
-      flex: 1 1 280px;
+      border-radius: 1rem;
+      padding: 0.6rem 0.9rem;
+      flex: 1 1 calc(50% - 0.5rem);
+      min-width: 220px;
       border: 1px solid #e2edf2;
       transition: all 0.2s;
     }
     .story-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
     }
     .story-card h4 {
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 700;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
       color: #1e2a3e;
     }
     .story-excerpt {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
       font-style: italic;
       color: #5a6e7c;
-      font-size: 0.85rem;
-      margin: 0.5rem 0;
+      font-size: 0.75rem;
+      margin: 0.3rem 0;
       border-left: 2px solid #2c6e9e;
-      padding-left: 0.6rem;
+      padding-left: 0.5rem;
     }
     .story-theme {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       color: #2c6e9e;
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.4rem;
       font-weight: 500;
     }
     .story-link {
-      margin-top: 0.6rem;
+      margin-top: 0.4rem;
     }
     .story-link a {
       color: #2c6e9e;
       text-decoration: none;
       font-weight: 500;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
 
     .photo-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.2rem;
-      margin-top: 1rem;
+      gap: 1rem;
+      margin-top: 0.8rem;
       justify-content: center;
     }
 
     .photo-item {
-      max-width: 400px;
+      max-width: 350px;
       width: 100%;
       background: #f9fbfd;
-      border-radius: 1.2rem;
-      padding: 0.8rem;
+      border-radius: 1rem;
+      padding: 0.6rem;
       border: 1px solid #e2edf2;
       text-align: center;
     }
@@ -314,22 +326,20 @@
     .photo-item img {
       width: 100%;
       height: auto;
-      max-width: 100%;
-      border-radius: 0.8rem;
+      border-radius: 0.6rem;
       display: block;
-      object-fit: contain;
     }
 
     .photo-caption {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       color: #5a6e7c;
-      margin-top: 0.4rem;
+      margin-top: 0.3rem;
     }
 
     .footer {
       text-align: center;
-      padding: 1.5rem 0 1rem;
-      font-size: 0.8rem;
+      padding: 1rem 0 0.5rem;
+      font-size: 0.75rem;
       color: #67829c;
       border-top: 1px solid #d4e2ec;
       margin-top: 1rem;
@@ -337,17 +347,17 @@
 
     @media (max-width: 700px) {
       .container { padding: 1rem; }
-      .card { padding: 1.5rem; }
+      .card { padding: 1.2rem; }
       .hero-left h1 { font-size: 2rem; }
-      .section-title { font-size: 1.4rem; }
+      .section-title { font-size: 1.2rem; }
       .profile-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
-      .photo-item { max-width: 100%; }
       .story-card { flex: 1 1 100%; }
     }
   </style>
 </head>
 <body>
 <div class="container">
+  <!-- 頁首 -->
   <div class="card">
     <div class="hero">
       <div class="hero-left">
@@ -374,69 +384,73 @@
     </div>
   </div>
 
+  <!-- 專業摘要 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-user-pen"></i><span>專業摘要</span></div>
     <div class="bio-text">
-      <p>具備文字採訪、內容編輯與研究型寫作能力。曾於輔仁大學宗教研究所進修，鑽研龍樹中觀哲學，並在台灣宗教領域頂尖期刊《臺灣宗教研究》發表論文〈宗教時間中的綿延與斷裂〉。過去任雜誌採訪編輯兩年餘，擅長將高度複雜的資訊 — 無論是宗教思想、文化現象或汽車機械技術 — 重新拆解、整理為清晰、有邏輯且貼近讀者的內容。</p>
+      <p>具備文字採訪、內容編輯與研究型寫作能力。曾於輔仁大學宗教研究所進修，鑽研龍樹中觀哲學，並在台灣宗教領域頂尖期刊《臺灣宗教研究》發表論文〈宗教時間中的綿延與斷裂〉。過去任雜誌採訪編輯兩年餘，擅長將複雜資訊重新整理為清晰、有邏輯且可閱讀的內容。</p>
       <p>我的文字具備學術深度與傳播效益，能在不同讀者群之間切換語氣與敘事策略。期待投入內容產製、品牌敘事、文史整理或媒體企劃，讓艱澀的知識轉譯為可被信賴的報導與論述。</p>
       <p class="highlight"><i class="fas fa-arrow-right"></i> 核心使命：將複雜變成透明，將資訊淬鍊為觀點。</p>
     </div>
   </div>
 
+  <!-- 工作經歷 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-briefcase"></i><span>工作經歷</span></div>
     <div class="exp-item">
       <div class="exp-header"><span class="exp-company">雨生文化出版事業有限公司</span><span class="exp-date">2019.06 – 2021.06</span></div>
       <div class="exp-title">文字採訪編輯｜汽車生活誌</div>
       <ul class="exp-desc">
-        <li><i class="fas fa-caret-right"></i> <strong>企劃與執行</strong>：獨立負責每期汽車單元企劃，從主題發想、車輛聯繫、實拍試駕到撰稿完成，每月穩定產出2-3篇深度報導。</li>
-        <li><i class="fas fa-caret-right"></i> <strong>跨部門溝通</strong>：與廣告主、公關公司及受訪者協調採訪細節，成功完成多次新車發表會與試駕現場報導。</li>
-        <li><i class="fas fa-caret-right"></i> <strong>文案與編排</strong>：撰寫高吸引力的標題與內文，使用軟體進行初步圖文排版，確保閱讀動線與資訊清晰度。</li>
-        <li><i class="fas fa-caret-right"></i> <strong>視覺產出</strong>：具備基礎汽車攝影能力，獨立拍攝雜誌配圖並篩選編輯，強化文字論述。</li>
+        <li><i class="fas fa-caret-right"></i> <strong>企劃與執行</strong>：獨立負責每期汽車單元企劃，每月穩定產出2-3篇深度報導。</li>
+        <li><i class="fas fa-caret-right"></i> <strong>跨部門溝通</strong>：與廣告主、公關公司協調採訪細節。</li>
+        <li><i class="fas fa-caret-right"></i> <strong>文案與編排</strong>：撰寫標題與內文，進行初步圖文排版。</li>
+        <li><i class="fas fa-caret-right"></i> <strong>視覺產出</strong>：具備基礎汽車攝影能力，獨立拍攝雜誌配圖。</li>
       </ul>
     </div>
     <div class="exp-item">
       <div class="exp-header"><span class="exp-company">語果作文 · 才藝教室</span><span class="exp-date">2017.01 – 2018.01</span></div>
       <div class="exp-title">作文老師／寫作引導</div>
       <ul class="exp-desc">
-        <li><i class="fas fa-caret-right"></i> 設計寫作架構課程，引導不同年齡層學生將抽象想法轉化為邏輯清晰的文字。</li>
-        <li><i class="fas fa-caret-right"></i> 訓練對於「讀者理解障礙」的敏感度，預判敘事盲點並調整教學／書寫策略。</li>
+        <li><i class="fas fa-caret-right"></i> 設計寫作架構課程，引導學生將抽象想法轉化為邏輯清晰的文字。</li>
       </ul>
     </div>
   </div>
 
+  <!-- 學術與人文專業 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-landmark"></i><span>學術與人文專業</span></div>
-    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
       <div style="flex: 2; min-width: 180px;">
-        <p><strong><i class="fas fa-university"></i> 輔仁大學 · 宗教研究所</strong> (碩士班進修 2021–2025)<br>研究領域：龍樹中觀哲學、宗教時間理論、當代宗教轉譯</p>
-        <p style="margin-top: 0.5rem;"><strong><i class="fas fa-file-alt"></i> 期刊發表</strong><br>〈宗教時間中的綿延與斷裂〉，刊登於《臺灣宗教研究》。</p>
+        <p><strong><i class="fas fa-university"></i> 輔仁大學 · 宗教研究所</strong> (碩士班進修 2021–2025)<br>研究領域：龍樹中觀哲學、宗教時間理論</p>
+        <p style="margin-top: 0.5rem;"><strong><i class="fas fa-file-alt"></i> 期刊發表</strong><br>〈宗教時間中的綿延與斷裂〉，《臺灣宗教研究》。</p>
         <p><strong><i class="fas fa-graduation-cap"></i> 學士背景</strong><br>國立東華大學 華文文學系／銘傳大學 應用中國文學系。</p>
       </div>
-      <div style="flex: 1.2; background: #f0f6fa; border-radius: 20px; padding: 1rem 1.2rem;">
-        <i class="fas fa-chalkboard-user" style="font-size: 1.4rem; color: #1f6390;"></i>
-        <p style="font-weight: 600; margin-top: 0.3rem;">儒釋道經典×現代敘事</p>
-        <p style="font-size: 0.85rem;">能夠進行經典思想之譯註、文史資料彙整，將傳統智慧重新詮釋為現代文案、刊物或簡報。</p>
+      <div style="flex: 1; background: #f0f6fa; border-radius: 18px; padding: 0.8rem 1rem;">
+        <i class="fas fa-chalkboard-user" style="font-size: 1.2rem; color: #1f6390;"></i>
+        <p style="font-weight: 600; margin-top: 0.2rem;">儒釋道經典×現代敘事</p>
+        <p style="font-size: 0.8rem;">能夠進行經典思想之譯註、文史資料彙整。</p>
       </div>
     </div>
   </div>
 
+  <!-- 核心職能 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-code-branch"></i><span>核心職能</span></div>
-    <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
       <div style="flex: 1;">
-        <h4 style="margin-bottom: 0.8rem;"><i class="fas fa-pen-fancy"></i> 編輯企劃力</h4>
-        <ul style="list-style: none;"><li>✓ 採訪寫作、審稿校對、下標改稿</li><li>✓ 內容轉譯 · 複雜資訊架構重建</li><li>✓ 簡報邏輯設計 / 企劃提案能力</li><li>✓ 刊物編撰、出版流程管理</li></ul>
+        <h4 style="margin-bottom: 0.3rem;"><i class="fas fa-pen-fancy"></i> 編輯企劃力</h4>
+        <ul style="list-style: none; font-size: 0.85rem;"><li>✓ 採訪寫作、審稿校對、下標改稿</li><li>✓ 內容轉譯 · 複雜資訊架構重建</li><li>✓ 簡報邏輯設計 / 企劃提案能力</li></ul>
       </div>
       <div style="flex: 1;">
-        <h4 style="margin-bottom: 0.8rem;"><i class="fas fa-laptop-code"></i> 數位工具</h4>
-        <div class="skills-grid"><span class="skill-chip">Word / Excel / PPT</span><span class="skill-chip">Photoshop / Lightroom</span><span class="skill-chip">Canva / 簡報設計</span><span class="skill-chip">Director / 多媒體基礎</span><span class="skill-chip">中文60字/分｜英文40字/分</span></div>
-        <h4 style="margin: 1.2rem 0 0.6rem 0;"><i class="fas fa-language"></i> 語言能力</h4>
-        <p>英文 聽/讀 中等 · 台語 中等</p>
+        <h4 style="margin-bottom: 0.3rem;"><i class="fas fa-laptop-code"></i> 數位工具</h4>
+        <div class="skills-grid"><span class="skill-chip">Word / Excel / PPT</span><span class="skill-chip">Photoshop / Lightroom</span><span class="skill-chip">Canva</span><span class="skill-chip">中文60字/分</span></div>
+        <h4 style="margin: 0.8rem 0 0.2rem 0;"><i class="fas fa-language"></i> 語言能力</h4>
+        <p style="font-size: 0.85rem;">英文 聽/讀 中等 · 台語 中等</p>
       </div>
     </div>
   </div>
 
+  <!-- 代表作品（輕薄兩欄＋摘錄完整） -->
   <div class="card">
     <div class="section-title"><i class="fas fa-folder-open"></i><span>代表作品</span></div>
     
@@ -444,31 +458,24 @@
       <div class="work-card">
         <i class="fas fa-scroll"></i>
         <h4>學術論文 · 臺灣宗教研究</h4>
-        <p>〈宗教時間中的綿延與斷裂〉— 展現抽象理論與哲學架構之寫作能力。</p>
-        <p><a href="https://www.airitilibrary.com/Article/Detail/a0000594-N202501070006-00004" style="color:#2c6e9e; text-decoration:none;">🔗 閱讀論文 →</a></p>
+        <p>〈宗教時間中的綿延與斷裂〉</p>
+        <p><a href="https://www.airitilibrary.com/Article/Detail/a0000594-N202501070006-00004" style="color:#2c6e9e; text-decoration:none; font-size:0.8rem;">🔗 閱讀論文 →</a></p>
       </div>
-    </div>
-
-    <div class="work-grid">
       <div class="work-card">
         <i class="fas fa-newspaper"></i>
         <h4>汽車雜誌試乘文章</h4>
-        <p>實車拍攝＋專業試駕報導，含圖文編排、規格轉譯，每月穩定刊出。</p>
-        <p><a href="https://motormag.com.tw/2020/05/02/land-rover-discovery-sport-p250-r-dynamic-se/" style="color:#2c6e9e; text-decoration:none;">🔗 閱讀文章 →</a></p>
+        <p>實車試駕報導、規格轉譯</p>
+        <p><a href="https://motormag.com.tw/2020/05/02/land-rover-discovery-sport-p250-r-dynamic-se/" style="color:#2c6e9e; text-decoration:none; font-size:0.8rem;">🔗 閱讀文章 →</a></p>
       </div>
-    </div>
-
-    <div class="work-grid">
       <div class="work-card">
         <i class="fas fa-microphone-alt"></i>
         <h4>採訪實錄與專題報導</h4>
-        <p>車界人物專訪、活動紀實，擅長將專業術語改寫為高親和力內容。</p>
+        <p>人物專訪、活動紀實、專業術語轉譯</p>
       </div>
     </div>
 
-    <div style="margin-top: 1.5rem;">
-      <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-camera"></i> 汽車攝影作品</h4>
-      <p style="font-size: 0.85rem; color: #4a627a;">實際拍攝之汽車專業照片，展現構圖、光影運用與動態捕捉能力。</p>
+    <div style="margin-top: 1.2rem;">
+      <h4 style="margin-bottom: 0.3rem; font-size:1rem;"><i class="fas fa-camera"></i> 汽車攝影作品</h4>
       <div class="photo-grid">
         <div class="photo-item">
           <a href="https://i.ibb.co/Z6nfx8Gf/IMG-0360.jpg">
@@ -479,69 +486,35 @@
       </div>
     </div>
 
-    <div style="margin-top: 2rem;">
-      <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-feather-alt"></i> 文學創作 · 短篇小說集</h4>
-      <p style="font-size: 0.85rem; color: #4a627a;">以下為完整短篇小說作品，點擊標題可閱讀全文。</p>
-      <div class="work-grid" style="flex-direction: column; gap: 1rem;">
-        <div class="story-card">
-          <h4>〈變山〉</h4>
-          <div class="story-excerpt">「我試圖喊出些聲音，但是喉嚨像是被誰畫上虛線，連感知能力都失去。」</div>
-          <div class="story-theme">#山靈 #恐懼與消融 #存在</div>
-          <div class="story-link"><a href="story1.html">📖 閱讀全文 →</a></div>
-        </div>
-        <div class="story-card">
-          <h4>〈味覺語言〉</h4>
-          <div class="story-excerpt">「妳曾說過十年前的車子有一種特別的味道，不像現代的有種置身於科技燈光閃爍的隧道當中的迷失感。」</div>
-          <div class="story-theme">#記憶 #嗅覺 #懷舊與溝通</div>
-          <div class="story-link"><a href="story2.html">📖 閱讀全文 →</a></div>
-        </div>
-        <div class="story-card">
-          <h4>〈相同的地方〉</h4>
-          <div class="story-excerpt">「他拆開那包七星才發現沒有打火機，但是他仍然叼在嘴上，用力吸了幾口，他覺得心開始放鬆。」</div>
-          <div class="story-theme">#精神病房 #自由與禁錮 #逃離</div>
-          <div class="story-link"><a href="story3.html">📖 閱讀全文 →</a></div>
-        </div>
-        <div class="story-card">
-          <h4>〈最後一次的交錯〉</h4>
-          <div class="story-excerpt">「他幾乎是癡迷的愛著兒子，同時也癡迷的恨惡自己，所以他愛的形式，永遠只是傷害。」</div>
-          <div class="story-theme">#父子 #憂鬱 #傷害與理解</div>
-          <div class="story-link"><a href="story4.html">📖 閱讀全文 →</a></div>
-        </div>
-        <div class="story-card">
-          <h4>〈回家的路〉</h4>
-          <div class="story-excerpt">「石像依然微笑著，它的眼神與狼犬的眼神也重疊了起來。它說：『你看到了嗎？狗是不會回家的。』」</div>
-          <div class="story-theme">#罪疚 #幻覺 #無法歸返</div>
-          <div class="story-link"><a href="story5.html">📖 閱讀全文 →</a></div>
-        </div>
-        <div class="story-card">
-          <h4>〈沒有人記得也沒關係〉</h4>
-          <div class="story-excerpt">「我們笑得把眼淚都流光了還在笑，而且好久都沒有人記得把門打開。」</div>
-          <div class="story-theme">#親密關係 #爭吵與和解 #日常</div>
-          <div class="story-link"><a href="story6.html">📖 閱讀全文 →</a></div>
-        </div>
-        <div class="story-card">
-          <h4>〈明天我會打一通電話〉</h4>
-          <div class="story-excerpt">「我的聲音是這麼疲倦，窗外已經黑夜，那隻小黑大概活不到明天。」</div>
-          <div class="story-theme">#現實與創作 #生存焦慮 #旁觀者</div>
-          <div class="story-link"><a href="story7.html">📖 閱讀全文 →</a></div>
-        </div>
+    <div style="margin-top: 1.2rem;">
+      <h4 style="margin-bottom: 0.3rem; font-size:1rem;"><i class="fas fa-feather-alt"></i> 文學創作 · 短篇小說集</h4>
+      <div class="work-grid" style="gap: 0.8rem;">
+        <!-- 以下小說摘錄皆可完整顯示約3行，自動換行 -->
+        <div class="story-card"><h4>〈變山〉</h4><div class="story-excerpt">「我試圖喊出些聲音，但是喉嚨像是被誰畫上虛線，連感知能力都失去。但我知道我正說著：「我還在啊。」而且我想像出來的是嘶吼的聲音。」</div><div class="story-theme">#山靈 #恐懼與消融</div><div class="story-link"><a href="story1.html">📖 閱讀全文 →</a></div></div>
+        <div class="story-card"><h4>〈味覺語言〉</h4><div class="story-excerpt">「妳曾說過十年前的車子有一種特別的味道，不像現代的有種置身於科技燈光閃爍的隧道當中的迷失感。但妳不曾說清楚，妳聞到了什麼，因為誰也無法把懷舊說得更清楚點。」</div><div class="story-theme">#記憶 #嗅覺</div><div class="story-link"><a href="story2.html">📖 閱讀全文 →</a></div></div>
+        <div class="story-card"><h4>〈相同的地方〉</h4><div class="story-excerpt">「他拆開那包七星才發現沒有打火機，但是他仍然叼在嘴上，用力吸了幾口，他覺得心開始放鬆，就好像下一秒躺在地上就能夠立刻睡著。」</div><div class="story-theme">#自由與禁錮</div><div class="story-link"><a href="story3.html">📖 閱讀全文 →</a></div></div>
+        <div class="story-card"><h4>〈最後一次的交錯〉</h4><div class="story-excerpt">「他幾乎是癡迷的愛著兒子，同時也癡迷的恨惡自己，所以他愛的形式，永遠只是傷害。也許兒子也是如此，才會愛到傷害了所有人與自己。」</div><div class="story-theme">#父子 #憂鬱</div><div class="story-link"><a href="story4.html">📖 閱讀全文 →</a></div></div>
+        <div class="story-card"><h4>〈回家的路〉</h4><div class="story-excerpt">「石像依然微笑著，它的眼神與狼犬的眼神也重疊了起來。它說：『你看到了嗎？狗是不會回家的。』那聲音、那語氣，就是妻子每一次找狗時的無助。」</div><div class="story-theme">#罪疚 #幻覺</div><div class="story-link"><a href="story5.html">📖 閱讀全文 →</a></div></div>
+        <div class="story-card"><h4>〈沒有人記得也沒關係〉</h4><div class="story-excerpt">「我們笑得把眼淚都流光了還在笑，而且好久都沒有人記得把門打開。於是我們笑得把眼淚都流光了還在笑。」</div><div class="story-theme">#親密關係</div><div class="story-link"><a href="story6.html">📖 閱讀全文 →</a></div></div>
+        <div class="story-card"><h4>〈明天我會打一通電話〉</h4><div class="story-excerpt">「我的聲音是這麼疲倦，窗外已經黑夜，那隻小黑大概活不到明天。明天我會打電話去問問看。那隻小黑大概活不到明天。」</div><div class="story-theme">#生存焦慮</div><div class="story-link"><a href="story7.html">📖 閱讀全文 →</a></div></div>
       </div>
     </div>
   </div>
 
+  <!-- 職涯目標與合作價值 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-chart-line"></i><span>職涯目標 & 合作價值</span></div>
-    <div style="display: flex; flex-wrap: wrap; gap: 1.2rem;">
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
       <div style="flex: 2;">
         <p><i class="fas fa-check-circle" style="color:#2c6e9e;"></i> <strong>期待職稱：</strong>文字編輯／採訪企劃／內容專員／文史整理與編輯</p>
         <p><i class="fas fa-check-circle" style="color:#2c6e9e;"></i> <strong>工作地點：</strong>台北市、新北市</p>
         <p><i class="fas fa-check-circle" style="color:#2c6e9e;"></i> <strong>全職 · 日班/彈性 · 薪資面議</strong></p>
-        <p>能獨立作業，擅長跨團隊溝通，兼具學術訓練與媒體實務。</p>
+        <p style="font-size:0.85rem;">能獨立作業，擅長跨團隊溝通，兼具學術訓練與媒體實務。</p>
       </div>
-      <div style="flex: 1; background: #eef3fc; border-radius: 18px; padding: 1rem;">
+      <div style="flex: 1; background: #eef3fc; border-radius: 18px; padding: 0.8rem;">
         <i class="fas fa-lightbulb"></i>
         <p style="font-weight: bold;">轉譯者的優勢</p>
-        <p style="font-size: 0.85rem;">將艱澀概念（宗教、技術）轉變為每個人都能共感的故事。</p>
+        <p style="font-size: 0.75rem;">將艱澀概念轉變為每個人都能共感的故事。</p>
       </div>
     </div>
   </div>
@@ -551,8 +524,9 @@
     <p>© 2026 王振宇 · 線上商務履歷</p>
   </div>
 </div>
+
 <script>
-  // 當主頁面載入時，如果有儲存的滾動位置，就跳過去
+  // 記憶主頁面滾動位置
   window.addEventListener('load', function() {
     const scrollPos = sessionStorage.getItem('mainScrollPosition');
     if (scrollPos !== null) {
@@ -560,14 +534,12 @@
       sessionStorage.removeItem('mainScrollPosition');
     }
   });
-
-  // 當點擊任何小說連結時，儲存主頁面目前的滾動位置
-  document.querySelectorAll('.story-link a, .work-card a').forEach(link => {
+  document.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', function() {
       sessionStorage.setItem('mainScrollPosition', window.scrollY);
     });
   });
 </script>
-  
+
 </body>
 </html>

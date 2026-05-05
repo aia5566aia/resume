@@ -551,5 +551,23 @@
     <p>© 2026 王振宇 · 線上商務履歷</p>
   </div>
 </div>
+<script>
+  // 當主頁面載入時，如果有儲存的滾動位置，就跳過去
+  window.addEventListener('load', function() {
+    const scrollPos = sessionStorage.getItem('mainScrollPosition');
+    if (scrollPos !== null) {
+      window.scrollTo(0, parseInt(scrollPos));
+      sessionStorage.removeItem('mainScrollPosition');
+    }
+  });
+
+  // 當點擊任何小說連結時，儲存主頁面目前的滾動位置
+  document.querySelectorAll('.story-link a, .work-card a').forEach(link => {
+    link.addEventListener('click', function() {
+      sessionStorage.setItem('mainScrollPosition', window.scrollY);
+    });
+  });
+</script>
+  
 </body>
 </html>

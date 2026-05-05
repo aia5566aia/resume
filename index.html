@@ -224,7 +224,6 @@
       font-weight: 500;
     }
 
-    /* 作品卡片區 */
     .work-grid {
       display: flex;
       flex-wrap: wrap;
@@ -252,7 +251,6 @@
       margin: 0.5rem 0 0.2rem;
     }
 
-    /* 文學創作卡片特殊樣式 */
     .story-card {
       background: #f9fbfd;
       border-radius: 1.2rem;
@@ -350,7 +348,6 @@
 </head>
 <body>
 <div class="container">
-  <!-- 頁首 -->
   <div class="card">
     <div class="hero">
       <div class="hero-left">
@@ -377,7 +374,6 @@
     </div>
   </div>
 
-  <!-- 專業摘要 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-user-pen"></i><span>專業摘要</span></div>
     <div class="bio-text">
@@ -387,7 +383,6 @@
     </div>
   </div>
 
-  <!-- 工作經歷 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-briefcase"></i><span>工作經歷</span></div>
     <div class="exp-item">
@@ -410,7 +405,6 @@
     </div>
   </div>
 
-  <!-- 學術與人文專業 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-landmark"></i><span>學術與人文專業</span></div>
     <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
@@ -427,7 +421,6 @@
     </div>
   </div>
 
-  <!-- 核心職能 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-code-branch"></i><span>核心職能</span></div>
     <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
@@ -444,31 +437,27 @@
     </div>
   </div>
 
-  <!-- 代表作品（新順序：學術論文 → 汽車文章 → 採訪實錄 → 汽車攝影 → 文學創作） -->
   <div class="card">
     <div class="section-title"><i class="fas fa-folder-open"></i><span>代表作品</span></div>
     
-    <!-- 學術論文 -->
     <div class="work-grid">
       <div class="work-card">
         <i class="fas fa-scroll"></i>
         <h4>學術論文 · 臺灣宗教研究</h4>
         <p>〈宗教時間中的綿延與斷裂〉— 展現抽象理論與哲學架構之寫作能力。</p>
-        <p><a href="https://www.airitilibrary.com/Article/Detail/a0000594-N202501070006-00004" target="_blank" rel="noopener noreferrer" style="color:#2c6e9e; text-decoration:none;">🔗 閱讀論文 →</a></p>
+        <p><a href="https://www.airitilibrary.com/Article/Detail/a0000594-N202501070006-00004" style="color:#2c6e9e; text-decoration:none;">🔗 閱讀論文 →</a></p>
       </div>
     </div>
 
-    <!-- 汽車雜誌試乘文章 -->
     <div class="work-grid">
       <div class="work-card">
         <i class="fas fa-newspaper"></i>
         <h4>汽車雜誌試乘文章</h4>
         <p>實車拍攝＋專業試駕報導，含圖文編排、規格轉譯，每月穩定刊出。</p>
-        <p><a href="https://motormag.com.tw/2020/05/02/land-rover-discovery-sport-p250-r-dynamic-se/" target="_blank" rel="noopener noreferrer" style="color:#2c6e9e; text-decoration:none;">🔗 閱讀文章 →</a></p>
+        <p><a href="https://motormag.com.tw/2020/05/02/land-rover-discovery-sport-p250-r-dynamic-se/" style="color:#2c6e9e; text-decoration:none;">🔗 閱讀文章 →</a></p>
       </div>
     </div>
 
-    <!-- 採訪實錄與專題報導 -->
     <div class="work-grid">
       <div class="work-card">
         <i class="fas fa-microphone-alt"></i>
@@ -477,13 +466,12 @@
       </div>
     </div>
 
-    <!-- 汽車攝影作品 -->
     <div style="margin-top: 1.5rem;">
       <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-camera"></i> 汽車攝影作品</h4>
       <p style="font-size: 0.85rem; color: #4a627a;">實際拍攝之汽車專業照片，展現構圖、光影運用與動態捕捉能力。</p>
       <div class="photo-grid">
         <div class="photo-item">
-          <a href="https://i.ibb.co/Z6nfx8Gf/IMG-0360.jpg" target="_blank" rel="noopener noreferrer">
+          <a href="https://i.ibb.co/Z6nfx8Gf/IMG-0360.jpg">
             <img src="https://i.ibb.co/Z6nfx8Gf/IMG-0360.jpg" alt="車輛動態實拍">
           </a>
           <div class="photo-caption">車輛動態實拍</div>
@@ -491,73 +479,56 @@
       </div>
     </div>
 
-    <!-- 文學創作（7篇小說卡片區） -->
     <div style="margin-top: 2rem;">
       <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-feather-alt"></i> 文學創作 · 短篇小說集</h4>
       <p style="font-size: 0.85rem; color: #4a627a;">以下為完整短篇小說作品，點擊標題可閱讀全文。</p>
       <div class="work-grid" style="flex-direction: column; gap: 1rem;">
-        
-        <!-- 1. 變山 -->
         <div class="story-card">
           <h4>〈變山〉</h4>
           <div class="story-excerpt">「我試圖喊出些聲音，但是喉嚨像是被誰畫上虛線，連感知能力都失去。」</div>
           <div class="story-theme">#山靈 #恐懼與消融 #存在</div>
-          <div class="story-link"><a href="story1.html" target="_blank">📖 閱讀全文 →</a></div>
+          <div class="story-link"><a href="story1.html">📖 閱讀全文 →</a></div>
         </div>
-        
-        <!-- 2. 味覺語言 -->
         <div class="story-card">
           <h4>〈味覺語言〉</h4>
           <div class="story-excerpt">「妳曾說過十年前的車子有一種特別的味道，不像現代的有種置身於科技燈光閃爍的隧道當中的迷失感。」</div>
           <div class="story-theme">#記憶 #嗅覺 #懷舊與溝通</div>
-          <div class="story-link"><a href="story2.html" target="_blank">📖 閱讀全文 →</a></div>
+          <div class="story-link"><a href="story2.html">📖 閱讀全文 →</a></div>
         </div>
-        
-        <!-- 3. 相同的地方 -->
         <div class="story-card">
           <h4>〈相同的地方〉</h4>
           <div class="story-excerpt">「他拆開那包七星才發現沒有打火機，但是他仍然叼在嘴上，用力吸了幾口，他覺得心開始放鬆。」</div>
           <div class="story-theme">#精神病房 #自由與禁錮 #逃離</div>
-          <div class="story-link"><a href="story3.html" target="_blank">📖 閱讀全文 →</a></div>
+          <div class="story-link"><a href="story3.html">📖 閱讀全文 →</a></div>
         </div>
-        
-        <!-- 4. 最後一次的交錯 -->
         <div class="story-card">
           <h4>〈最後一次的交錯〉</h4>
           <div class="story-excerpt">「他幾乎是癡迷的愛著兒子，同時也癡迷的恨惡自己，所以他愛的形式，永遠只是傷害。」</div>
           <div class="story-theme">#父子 #憂鬱 #傷害與理解</div>
-          <div class="story-link"><a href="story4.html" target="_blank">📖 閱讀全文 →</a></div>
+          <div class="story-link"><a href="story4.html">📖 閱讀全文 →</a></div>
         </div>
-        
-        <!-- 5. 回家的路 -->
         <div class="story-card">
           <h4>〈回家的路〉</h4>
           <div class="story-excerpt">「石像依然微笑著，它的眼神與狼犬的眼神也重疊了起來。它說：『你看到了嗎？狗是不會回家的。』」</div>
           <div class="story-theme">#罪疚 #幻覺 #無法歸返</div>
-          <div class="story-link"><a href="story5.html" target="_blank">📖 閱讀全文 →</a></div>
+          <div class="story-link"><a href="story5.html">📖 閱讀全文 →</a></div>
         </div>
-        
-        <!-- 6. 沒有人記得也沒關係 -->
         <div class="story-card">
           <h4>〈沒有人記得也沒關係〉</h4>
           <div class="story-excerpt">「我們笑得把眼淚都流光了還在笑，而且好久都沒有人記得把門打開。」</div>
           <div class="story-theme">#親密關係 #爭吵與和解 #日常</div>
-          <div class="story-link"><a href="story6.html" target="_blank">📖 閱讀全文 →</a></div>
+          <div class="story-link"><a href="story6.html">📖 閱讀全文 →</a></div>
         </div>
-        
-        <!-- 7. 明天我會打一通電話 -->
         <div class="story-card">
           <h4>〈明天我會打一通電話〉</h4>
           <div class="story-excerpt">「我的聲音是這麼疲倦，窗外已經黑夜，那隻小黑大概活不到明天。」</div>
           <div class="story-theme">#現實與創作 #生存焦慮 #旁觀者</div>
-          <div class="story-link"><a href="story7.html" target="_blank">📖 閱讀全文 →</a></div>
+          <div class="story-link"><a href="story7.html">📖 閱讀全文 →</a></div>
         </div>
-        
       </div>
     </div>
   </div>
 
-  <!-- 職涯目標與合作價值 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-chart-line"></i><span>職涯目標 & 合作價值</span></div>
     <div style="display: flex; flex-wrap: wrap; gap: 1.2rem;">

@@ -117,7 +117,21 @@
   <div class="footer"><p>© 2026 王振宇 · 短篇小說〈回家的路〉</p></div>
 
 </div>
-
+<script>
+  window.addEventListener('load', function() {
+    const scrollPos = sessionStorage.getItem('scrollPosition');
+    if (scrollPos !== null) {
+      window.scrollTo(0, parseInt(scrollPos));
+      sessionStorage.removeItem('scrollPosition');
+    }
+  });
+  document.querySelectorAll('.back-link a').forEach(link => {
+    link.addEventListener('click', function() {
+      sessionStorage.setItem('scrollPosition', window.scrollY);
+    });
+  });
+</script>
+  
 </body>
 
 </html>

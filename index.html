@@ -257,7 +257,6 @@
       color: #5a6e7c;
     }
 
-    /* 小說卡片（兩欄、摘錄可多行） */
     .story-card {
       background: #f9fbfd;
       border-radius: 1rem;
@@ -357,7 +356,6 @@
 </head>
 <body>
 <div class="container">
-  <!-- 頁首 -->
   <div class="card">
     <div class="hero">
       <div class="hero-left">
@@ -384,7 +382,6 @@
     </div>
   </div>
 
-  <!-- 專業摘要 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-user-pen"></i><span>專業摘要</span></div>
     <div class="bio-text">
@@ -394,7 +391,6 @@
     </div>
   </div>
 
-  <!-- 工作經歷 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-briefcase"></i><span>工作經歷</span></div>
     <div class="exp-item">
@@ -416,24 +412,31 @@
     </div>
   </div>
 
-  <!-- 學術與人文專業 -->
+  <!-- 學術與人文專業：核心期刊刊登＋就讀期間 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-landmark"></i><span>學術與人文專業</span></div>
     <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
       <div style="flex: 2; min-width: 180px;">
-        <p><strong><i class="fas fa-university"></i> 輔仁大學 · 宗教研究所</strong> (碩士班進修 2021–2025)<br>研究領域：龍樹中觀哲學、宗教時間理論</p>
-        <p style="margin-top: 0.5rem;"><strong><i class="fas fa-file-alt"></i> 期刊發表</strong><br>〈宗教時間中的綿延與斷裂〉，《臺灣宗教研究》。</p>
-        <p><strong><i class="fas fa-graduation-cap"></i> 學士背景</strong><br>國立東華大學 華文文學系／銘傳大學 應用中國文學系。</p>
+        <p><strong><i class="fas fa-university"></i> 學歷</strong><br>
+        <strong>輔仁大學 宗教研究所</strong>（2021.09 – 2025.09，肄業）<br>
+        <strong>銘傳大學 應用中國文學系</strong>（2016.09 – 2018.06，肄業）<br>
+        <strong>國立東華大學 華文文學系</strong>（2012.09 – 2014.06，後轉學）</p>
+
+        <p style="margin-top: 0.8rem;"><strong><i class="fas fa-file-alt"></i> 學術發表（THCI 核心期刊）</strong><br>
+        〈宗教時間中的綿延與斷裂〉，刊登於《臺灣宗教研究》，2024年12月。<br>
+        <span style="font-size:0.8rem; color:#4a627a;">該期刊為台灣宗教學門最具指標性之 THCI 核心期刊。</span></p>
+
+        <p><strong><i class="fas fa-flask"></i> 研究領域</strong><br>
+        龍樹中觀哲學、宗教時間理論、當代宗教轉譯。</p>
       </div>
       <div style="flex: 1; background: #f0f6fa; border-radius: 18px; padding: 0.8rem 1rem;">
         <i class="fas fa-chalkboard-user" style="font-size: 1.2rem; color: #1f6390;"></i>
         <p style="font-weight: 600; margin-top: 0.2rem;">儒釋道經典×現代敘事</p>
-        <p style="font-size: 0.8rem;">能夠進行經典思想之譯註、文史資料彙整。</p>
+        <p style="font-size: 0.8rem;">能夠進行經典思想之譯註、文史資料彙整，將傳統智慧重新詮釋為現代文案、刊物或簡報。</p>
       </div>
     </div>
   </div>
 
-  <!-- 核心職能 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-code-branch"></i><span>核心職能</span></div>
     <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
@@ -450,7 +453,6 @@
     </div>
   </div>
 
-  <!-- 代表作品（輕薄兩欄＋摘錄完整） -->
   <div class="card">
     <div class="section-title"><i class="fas fa-folder-open"></i><span>代表作品</span></div>
     
@@ -458,7 +460,7 @@
       <div class="work-card">
         <i class="fas fa-scroll"></i>
         <h4>學術論文 · 臺灣宗教研究</h4>
-        <p>〈宗教時間中的綿延與斷裂〉</p>
+        <p>〈宗教時間中的綿延與斷裂〉（THCI）</p>
         <p><a href="https://www.airitilibrary.com/Article/Detail/a0000594-N202501070006-00004" style="color:#2c6e9e; text-decoration:none; font-size:0.8rem;">🔗 閱讀論文 →</a></p>
       </div>
       <div class="work-card">
@@ -489,7 +491,6 @@
     <div style="margin-top: 1.2rem;">
       <h4 style="margin-bottom: 0.3rem; font-size:1rem;"><i class="fas fa-feather-alt"></i> 文學創作 · 短篇小說集</h4>
       <div class="work-grid" style="gap: 0.8rem;">
-        <!-- 以下小說摘錄皆可完整顯示約3行，自動換行 -->
         <div class="story-card"><h4>〈變山〉</h4><div class="story-excerpt">「我試圖喊出些聲音，但是喉嚨像是被誰畫上虛線，連感知能力都失去。但我知道我正說著：「我還在啊。」而且我想像出來的是嘶吼的聲音。」</div><div class="story-theme">#山靈 #恐懼與消融</div><div class="story-link"><a href="story1.html">📖 閱讀全文 →</a></div></div>
         <div class="story-card"><h4>〈味覺語言〉</h4><div class="story-excerpt">「妳曾說過十年前的車子有一種特別的味道，不像現代的有種置身於科技燈光閃爍的隧道當中的迷失感。但妳不曾說清楚，妳聞到了什麼，因為誰也無法把懷舊說得更清楚點。」</div><div class="story-theme">#記憶 #嗅覺</div><div class="story-link"><a href="story2.html">📖 閱讀全文 →</a></div></div>
         <div class="story-card"><h4>〈相同的地方〉</h4><div class="story-excerpt">「他拆開那包七星才發現沒有打火機，但是他仍然叼在嘴上，用力吸了幾口，他覺得心開始放鬆，就好像下一秒躺在地上就能夠立刻睡著。」</div><div class="story-theme">#自由與禁錮</div><div class="story-link"><a href="story3.html">📖 閱讀全文 →</a></div></div>
@@ -501,7 +502,6 @@
     </div>
   </div>
 
-  <!-- 職涯目標與合作價值 -->
   <div class="card">
     <div class="section-title"><i class="fas fa-chart-line"></i><span>職涯目標 & 合作價值</span></div>
     <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
@@ -526,7 +526,6 @@
 </div>
 
 <script>
-  // 記憶主頁面滾動位置
   window.addEventListener('load', function() {
     const scrollPos = sessionStorage.getItem('mainScrollPosition');
     if (scrollPos !== null) {
